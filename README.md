@@ -28,6 +28,10 @@ echo "LINK_CHECKER_TOKEN=<API Key>" >> ~/.zshrc
 
 ## Release Notes
 
+### 1.0.2 
+
+Added icon.
+
 ### 1.0.1
 
 Updated link detection. Only links that start with http(s):// will be checked.
