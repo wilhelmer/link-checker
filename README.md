@@ -1,7 +1,9 @@
-# link-checker
+# link-checker-2
 
 This extension checks links in `.md`, `.txt`, and `.rst` files for their
 status and for repository freshness.
+
+This is an updated fork of [link-checker](https://github.com/terakilobyte/link-checker).
 
 ## Features
 
@@ -26,6 +28,10 @@ echo "LINK_CHECKER_TOKEN=<API Key>" >> ~/.zshrc
 ## Known Issues
 
 ## Release Notes
+
+### 1.0.1
+
+Updated link detection. Only links that start with http(s):// will be checked.
 
 ### 1.0.0
 

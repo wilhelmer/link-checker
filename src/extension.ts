@@ -22,12 +22,12 @@ export function activate(context: vscode.ExtensionContext) {
     gContext = context;
   }
   if (!gDC) {
-    gDC = vscode.languages.createDiagnosticCollection("link-checker");
+    gDC = vscode.languages.createDiagnosticCollection("link-checker-2");
   }
   gContext.subscriptions.push(gDC);
   // Use the console to output diagnostic information (console.log) and errors (console.error)
   // This line of code will only be executed once when your extension is activated
-  console.log('Congratulations, your extension "link-checker" is now active!');
+  console.log('Congratulations, your extension "link-checker-2" is now active!');
 
   linkCheck();
   // The command has been defined in the package.json file

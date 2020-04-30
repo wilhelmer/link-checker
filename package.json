@@ -1,17 +1,17 @@
 {
-	"name": "link-checker",
+	"name": "link-checker-2",
 	"displayName": "Link Checker",
 	"description": "Checks links for 200 OK and, in the case of Github, repository staleness.",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
 	"categories": [
     "Linters"
   ],
-  "publisher": "link-checker",
+  "publisher": "wilhelmer",
   "repository": {
-    "url": "https://github.com/terakilobyte/link-checker.git"
+    "url": "https://github.com/wilhelmer/link-checker.git"
   },
 	"activationEvents": [
 		"onLanguage:markdown",
