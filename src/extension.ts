@@ -64,7 +64,7 @@ const linkCheck = () => {
       if (rstMatches && rstMatches.length === 2) {
         links.push({ type: "url", value: rstMatches[1], href: rstMatches[1] });
       } else {
-        links = linkify.find(line);
+        links = linkify.find(line).filter(link => /https?:\/\//.test(link.value));
       }
       links.forEach(link => {
         if (link.type !== "url") {
