@@ -45,10 +45,9 @@ const linkCheck = () => {
     if (document === undefined) {
       return;
     }
-    let text = document.getText().split("\n");
+    // Use replace() to fix issue with HTML tags immediately following a Markdown hyperlink
+    let text = document.getText().replace(/\((.*?)\)</g, "($1) <").split("\n");
     text.forEach((line, idx) => {
-      // Fix issue with HTML tags immediately following a Markdown hyperlink
-      line = line.replace(/\((.*?)\)</g, "($1) <");
       let links = Array<linkify.FindResultHash>();
       let rstMatches = line.match(/<(.*)>`_/);
       if (rstMatches && rstMatches.length === 2) {
