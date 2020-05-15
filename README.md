@@ -28,6 +28,10 @@ echo "LINK_CHECKER_TOKEN=<API Key>" >> ~/.zshrc
 
 ## Release Notes
 
+### 1.0.3
+
+Fixed issue with HTML tags immediately following a Markdown hyperlink.
+
 ### 1.0.2 
 
 Added icon.

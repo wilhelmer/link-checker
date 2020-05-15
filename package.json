@@ -2,7 +2,7 @@
     "name": "link-checker-2",
     "displayName": "Link Checker",
     "description": "Checks links for 200 OK and, in the case of GitHub, repository freshness.",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "engines": {
         "vscode": "^1.41.0"
     },
